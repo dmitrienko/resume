@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	margin: 0;
+	padding: 0;
+	background: url(../img/shattered.png) scroll 0 0 repeat #ffffff;
+	overflow-y: scroll;
+}
+
+body {
+	font: 0.89em/1.4 segoe ui,verdana,arial,sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #121212;
+	height: 100%;
+    min-height: 100%;
+}
+
+ul, ol, dl { 
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: Segoe UI,Arial,Sans-serif;
+	font-weight: 300;
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+
+h1 {
+	color: #787878;
+	font-size: 245%;
+}
+
+h2 {
+	border-bottom: 1px dotted #999999;
+	color: #0090d9;
+	margin: 15px 0 10px;
+	padding: 0 15px;
+	display: block;
+    font-size: 215%;
+}
+
+h2:hover {
+	background: #dddddd;
+	color: #005580;
+	-ms-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+h3 {
+	font-size: 130%;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-weight: 500;
+	font-size: 110%;
+	padding: 0;
+	margin-bottom: 5px;
+}
+
+a img {
+	border: none;
+}
+
+a:link, a:visited {
+	color: #0090d9;
+	text-decoration: none; 
+}
+
+a:hover, a:active, a:focus {
+	color: #005580;
+	text-decoration: none;
+}
+
+a:active, a:focus {
+	background: #dddddd;
+}
+
+::selection {
+	background: #333333; 
+	color: #ffffff;
+}
+
+::-moz-selection {
+	background: #333333;
+	color: #ffffff;
+}
+
+.noscript {
+	position: fixed; 
+	z-index: 1; 
+	width: 952px; 
+	margin-top: 200px; 
+	left: -480px; 
+	margin-left: 50%; 
+	background-color: #cccccc; 
+	border: 4px solid red; 
+	font-size: 150%; 
+	box-shadow: 0pt 0pt 50px rgb(0, 0, 0); 
+	-moz-box-shadow: 0pt 0pt 50px rgb(0, 0, 0); 
+	-webkit-box-shadow: 0pt 0pt 50px rgb(0, 0, 0); 
+	color: black; 
+	font-weight: bold;
+}
+
+.container {	
+	-moz-box-shadow: 0px 0px 15px #666666;
+	-webkit-box-shadow: 0px 0px 15px #666666;
+	box-shadow: 0px 0px 15px #666666;
+	width: 960px;
+	background: #ffffff;
+	margin: 0 auto; 
+}
+
+/* ~~ START OF HEADER ~~ */
+.header {
+	/**/
+}
+
+.header__style {
+	padding: 2px 55px;
+	text-align: right;
+}
+
+.header__style__link {
+	color: #999999 !important;
+	text-decoration: underline !important;
+}
+
+.header__style__link:hover {
+	color: #005580 !important;
+	text-decoration: underline !important;
+}
+/* ~~ END OF HEADER ~~ */
+
+/* ~~ START OF MENU ~~ */
+
+.menu {
+	font-size: 130%;
+    font-weight: 300;
+	margin: 10px 0 0;
+	background: #eeeeee;
+}
+
+.menu__spacer {
+	display: none;
+    height: 61px;
+}
+
+.menu__top {
+	font-size: 130%;
+    font-weight: 300;
+	margin: 0;
+	background: #eeeeee;
+	position: fixed;
+	top: 0;
+	z-index: 666;
+	-moz-box-shadow: 0px 0px 15px #666666;
+	-webkit-box-shadow: 0px 0px 15px #666666;	
+	box-shadow: 0px 0px 10px #666666;
+}
+
+.menu td {
+	border-right: 1px dotted #999999;
+}
+
+.menu td.last {
+	border: 0;
+}
+
+.menu__item {
+	/*padding: 10px 0;*/
+}
+
+.menu__item a {
+	display: block;
+	padding: 10px 0;
+	text-decoration: none;
+}
+
+.menu__item a:hover {
+	background: #dddddd;
+	color: #0077b3;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+}
+
+.menu__item a:active {
+	background: #dddddd;
+}
+/* ~~ END OF MENU ~~ */
+
+/* ~~ START OF MAIN CONTENT ~~ */
+.content {
+	margin: 0 100px;
+	padding: 10px 0;
+	width: 760px;
+	float: left;
+	height: auto !important;
+	min-height: 100%;
+}
+
+.content__layout {
+	margin: 0;
+	padding: 0;
+}
+
+.content__layout__include {
+	margin: 0 0 25px 0;
+}
+
+.content__layout__include-question {
+	color: #999999;
+	margin: 15px 0 0px 55px;
+}
+
+.content__layout__include-question_nm, .content__layout__include-answer_nm  {
+	margin: 0;
+}
+
+.content__layout__include-answer {
+	margin: 0 0 10px 55px;
+}
+
+.content__layout__include-answer a img {
+	margin-right: 5px;
+	border: 0;
+	opacity: 0.7;
+}
+
+.content__layout__include-answer a img:hover {
+	opacity: 1;
+}
+
+.content__layout__include-answer__code {
+	margin: 5px 0;
+	font-family: monospace;
+	background: #eeeeee;
+}
+/* ~~ END OF MAIN CONTENT ~~ */
+
+/* ~~ START OF FOOTER ~~ */
+.footer {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-top: 1px solid #999;
+	color: #666;
+	position: relative;
+	clear: both;
+	padding: 10px 55px;
+	text-align: center;
+}
+/* ~~ END OF FOOTER ~~ */
